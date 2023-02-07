@@ -3,7 +3,7 @@ This repository contains the code to draw the following house, the village under
 
 ![house image](testdata/house.png)
 ![house image](testdata/test_village_read.png)
-![house image](testdata/test_village_read_eq.png)
+![house image](testdata/test_village_eq_read.png)
 
 ## Usage 
 Start by cloning the repository to your local directory:

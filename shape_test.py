@@ -4,6 +4,7 @@ from PIL import Image
 import matplotlib.testing.compare as mpcompare
 import unittest
 import house
+import springfield
 import tempfile
 import os.path
 import svg_turtle
@@ -109,6 +110,43 @@ class TestShapes(unittest.TestCase):
             self._compare_canvas_to_expected(expected_filename="testdata/windows.png")
         )
 
+    def test_broken_window(self):
+        # draw a broken window with house.py
+        house.draw_window(
+            self._turtle, eq=True
+        )
+        # compare this window to the correct broken_window.png
+        self.assertIsNone(
+            self._compare_canvas_to_expected(expected_filename="testdata/test_broken_window.png")
+        )
+
+    def test_small_house(self):
+        # draw a tiled small house with springfield.py
+        springfield.new_house_small(
+            -600, -400, shrink=0.9, eq=True, t=self._turtle
+        )
+        # compare this house to the correct small_house.png
+        self.assertIsNone(
+            self._compare_canvas_to_expected(expected_filename="testdata/test_small_house.png")
+        )
+
+
+    def test_village(self):
+        # draw village with springfield.py
+        springfield.make_village_peq(self._turtle)
+        # compare this village to the correct village.png
+        self.assertIsNone(
+            self._compare_canvas_to_expected(expected_filename="testdata/test_village.png")
+        )
+
+
+    def test_village_eq(self):
+        # draw earthquaked village with springfield.py
+        springfield.make_village_eq(self._turtle)
+        # compare this earthquaked village to the correct village_eq.png
+        self.assertIsNone(
+            self._compare_canvas_to_expected(expected_filename="testdata/test_village_eq.png")
+        )
 
 if __name__ == "__main__":
     unittest.main()

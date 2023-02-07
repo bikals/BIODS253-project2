@@ -1,5 +1,5 @@
 # BIODS253 Project 1
-This repository contains the code to draw the following house.
+This repository contains the code to draw the following house, the village underneath it, and the post-earthquake village below that.
 
 ![house image](testdata/house.png)
 
@@ -25,22 +25,25 @@ python house.py
 By default, the drawing of the house should look exactly like the screenshot
 above.
 
+To draw the pre-earthquake village, please run:
+```
+python springfield.py
+```
+
+Then, select 'B'. By default, the drawing of the village should look exactly like the screenshot
+above.
+
+To draw the post-earthquake village, please run:
+```
+python springfield.py
+```
+
+Then, select 'C'. By default, the drawing of the village should look exactly like the screenshot
+above.
+
 To test the implementation, please run:
 ```
 python shape_test.py
 ```
-`shape_test.py` contains 6 unit tests that test various elements of the house,
-in addition to the house as a whole.
-
-
-## Your house must have:
-- [x] At least 4 windows
-- [x] At least two garage doors
-- [x] At least one door
-- [x] At least two trees
-- [x] One or more clouds
-
-## Deliverables:
-- [x] A public or private github repository to which you’ve added me (vijayp) as a collaborator
-- [x] A short video (one minute or less) that you’ve made with your team (you can record this on zoom if you’d like) where you describe your design and quickly walk us through your solution.  Talk about what worked well, and what was difficult.
-- [x] Write a readme file that makes it easy for someone not familiar with this program or language to download, install, run your tests if any, and then run your code.
+`shape_test.py` contains 10 unit tests that test various elements of the project,
+in addition to the project as a whole.

@@ -2,6 +2,8 @@
 This repository contains the code to draw the following house, the village underneath it, and the post-earthquake village below that.
 
 ![house image](testdata/house.png)
+![house image](testdata/test_village_read.png)
+![house image](testdata/test_village_read_eq.png)
 
 ## Usage 
 Start by cloning the repository to your local directory:
